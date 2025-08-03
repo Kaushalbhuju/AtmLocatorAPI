@@ -1,0 +1,10 @@
+<h2>Available ATMs Nearby</h2>
+<ul>
+  {% for atm in atms %}
+    <li>
+      <strong>{{ atm.bank_name }}</strong><br>
+      Location: {{ atm.location }}<br>
+      <a href="{% url 'atm_detail' atm.id %}">View Details</a>
+    </li>
+  {% endfor %}
+</ul>

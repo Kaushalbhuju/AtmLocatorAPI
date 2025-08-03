@@ -1,0 +1,5 @@
+<h2>{{ atm.bank_name }} - Details</h2>
+<p>Location: {{ atm.location }}</p>
+<p>Status: {{ atm.is_functional|yesno:"Functional,Not Working" }}</p>
+<p>Cash Available: {{ atm.has_cash|yesno:"Yes,No" }}</p>
+<a href="/">Back to list</a>
